@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Container styling */
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Box styling */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px auto;
+    transition: transform 2s ease, background-color 1s ease;
+  }
+  
+  /* Animation for the box */
+  @keyframes moveBox {
+    0% {
+      transform: translateX(0);
+      background-color: lightblue;
+    }
+    50% {
+      transform: translateX(200px);
+      background-color: lightgreen;
+    }
+    100% {
+      transform: translateX(0);
+      background-color: lightblue;
+    }
+  }
+  
+  .animate {
+    animation: moveBox 2s infinite;
+  }
+  
